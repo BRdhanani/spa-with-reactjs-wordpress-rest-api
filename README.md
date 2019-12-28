@@ -9,10 +9,10 @@ I have created custom post type named todo list and also created new template fi
 You need to create custom endpoint for your custom post type to access your posts data. So, open your functions.php file and add below code in it. Now open your newly created custom endpoint (like 'http://localhost/wordpress/wp-json/sections/v1/todo-list') in browser and you can see your all the custom posts data there. You need to fetch all of these posts in your react application. Let's move on react.
 
 ## Create React Applicatipon
-Now, create react app with following command.
-``` npx create-react-app your-project-name ```
-or
-``` npm create-react-app your-project-name ```
+Now, create react app with following command.<br>
+``` npx create-react-app your-project-name ```<br>
+or<br>
+``` npm create-react-app your-project-name ```<br>
 After running above command, new folder will be created in your system with your selected name. You also need to install one another important package named axios. To install it, run command ``` npm install axios ```. You can get more information [here](https://www.npmjs.com/package/axios)
 
 ## It's time to unlock the power of React
