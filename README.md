@@ -1,4 +1,4 @@
-# SPA(Single Page Application) With Reactjs and Wordpress REST API
+# SPA(Single Page Application) With React js and Wordpress REST API
 
 Single Page Application to create todo list using Wordpress REST API and React.
 
