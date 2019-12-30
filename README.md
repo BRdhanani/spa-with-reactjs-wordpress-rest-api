@@ -9,7 +9,30 @@ I have created custom post type named todo list and also created new template fi
 
 
 ## Create custom endpoint in REST API
-You need to create custom endpoint for your custom post type to access your posts data. So, open your functions.php file and add below code in it. Now open your newly created custom endpoint (like 'http://localhost/wordpress/wp-json/sections/v1/todo-list') in browser and you can see your all the custom posts data there. You need to fetch all of these posts in your react application. Let's move on react.
+You need to create custom endpoint for your custom post type to access your posts data. So, open your functions.php file and add below code in it.
+``` 
+function  sections_endpoint( $request_data ) {
+    $args = array(
+        'post_type' => 'todo-list',
+        'posts_per_page'=>-1, 
+        'numberposts'=>-1
+    );
+    $posts = get_posts($args);
+    foreach ($posts as $key => $post) {
+        $posts[$key]->post_title;
+        $posts[$key]->post_content;
+    }
+    return  $posts;
+}
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'sections/v1', '/todo-list/', array(
+        'methods' => 'GET',
+        'callback' => 'sections_endpoint'
+    ));
+});
+ ```
+
+Now open your newly created custom endpoint (like 'http://localhost/wordpress/wp-json/sections/v1/todo-list') in browser and you can see your all the custom posts data there. You need to fetch all of these posts in your react application. Let's move on react.
 
 ## Create React Applicatipon
 Now, create react app with following command.<br>
