@@ -10,7 +10,7 @@ I have created custom post type named todo list and also created new template fi
 
 ## Create custom endpoint in REST API
 You need to create custom endpoint for your custom post type to access your posts data. So, open your functions.php file and add below code in it.
-``` 
+``` PHP
 function  sections_endpoint( $request_data ) {
     $args = array(
         'post_type' => 'todo-list',
