@@ -3,7 +3,7 @@
 Single Page Application to create todo list using Wordpress REST API and React.
 
 ## Create Posts for todo lists in Wordpress
-I have created custom post type named todo list and also created new template file. In this template file, I created custom form to display it in Wordpress front end for data insertion. You can add your task name and it's description there.
+I have created custom post type named todo list and also created new template file. In this template file, I created custom form to display it in Wordpress front end for data insertion. You can add your task name and it's description there. I am using default twentynineteen theme provided by wordpress you can also use your custom theme.
 ![Screenshot from 2019-12-30 10-01-23](https://user-images.githubusercontent.com/46484569/71568241-b9234900-2aeb-11ea-83a0-abf98490f21b.png)
 
 
