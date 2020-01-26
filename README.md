@@ -48,6 +48,9 @@ Now, open http://localhost:3000 in any browser to view your todo list.
 
 ![Screenshot from 2019-12-30 10-05-45](https://user-images.githubusercontent.com/46484569/71568333-71e98800-2aec-11ea-87c5-ac202a59559a.png)
 
+## Usefull Blog
+[Single Page Web Application](https://medium.com/@brijeshdhanani/how-to-create-a-single-page-application-spa-with-react-js-and-wordpress-rest-api-9a53a9698579)
+
 ********Please Follow Me on Github********
 
 Thanks!!!!
